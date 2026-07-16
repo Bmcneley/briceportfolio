@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Geist", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: black;
+}
+
+::selection {
+  background-color: white;
+  color: black;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  15% {
+    background-position: -50% 0;
+  }
+  100% {
+    background-position: -50% 0;
+  }
+}
+
+@keyframes drift-stars {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -200px 200px;
+  }
+}
