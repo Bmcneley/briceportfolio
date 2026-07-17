@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-export default function Gallery({ count = 4 }) {
+export default function Gallery({ images = [], count = images.length || 4 }) {
   const [index, setIndex] = useState(0);
   const slides = Array.from({ length: count }, (_, i) => i);
 
@@ -14,14 +14,25 @@ export default function Gallery({ count = 4 }) {
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${index * 100}%)` }}
         >
-          {slides.map((i) => (
-            <div
-              key={i}
-              className="flex h-64 w-full shrink-0 items-center justify-center bg-white/5 text-sm text-white/30 sm:h-80"
-            >
-              Placeholder Image {i + 1}
-            </div>
-          ))}
+          {slides.map((i) =>
+            images[i] ? (
+              <div key={i} className="relative h-64 w-full shrink-0 sm:h-80">
+                <img
+                  src={images[i]}
+                  alt={`Gallery image ${i + 1}`}
+                  className="h-full w-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/40" />
+              </div>
+            ) : (
+              <div
+                key={i}
+                className="flex h-64 w-full shrink-0 items-center justify-center bg-white/5 text-sm text-white/30 sm:h-80"
+              >
+                Placeholder Image {i + 1}
+              </div>
+            ),
+          )}
         </div>
 
         <button

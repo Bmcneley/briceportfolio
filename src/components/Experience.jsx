@@ -54,45 +54,47 @@ const experience = [
 
 export default function Experience() {
   return (
-    <section
-      id="experience"
-      className="mx-auto max-w-4xl scroll-mt-24 px-4 py-20 sm:px-6"
-    >
-      <h2 className="text-center text-2xl font-bold text-white sm:text-3xl">
-        Experience
-      </h2>
-      <div className="mt-10 flex flex-col gap-6">
-        {experience.map((item, i) => (
-          <div
-            key={i}
-            className="flex flex-col items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-4 text-center sm:flex-row sm:items-start sm:p-6 sm:text-left"
-          >
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-white/90 p-2">
-              <img
-                src={item.logo}
-                alt={item.org}
-                className="h-full w-full object-contain"
-              />
-            </div>
-            <div className="min-w-0 flex-1">
-              <div className="flex flex-col items-center gap-1 sm:flex-row sm:flex-wrap sm:items-baseline sm:justify-between sm:gap-2">
-                <h3 className="text-lg font-semibold text-white">
-                  {item.role}
-                </h3>
-                <span className="text-sm text-white/40">{item.period}</span>
+    <div className="border-t border-white/10">
+      <section
+        id="experience"
+        className="mx-auto max-w-4xl scroll-mt-24 px-4 py-20 sm:px-6"
+      >
+        <h2 className="text-center text-2xl font-bold text-white sm:text-3xl">
+          My Project and Job Experience
+        </h2>
+        <div className="mt-10 flex flex-col gap-6">
+          {experience.map((item, i) => (
+            <div
+              key={i}
+              className="flex flex-col items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-4 text-center transition-colors hover:border-white/30 sm:flex-row sm:items-start sm:p-6 sm:text-left"
+            >
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-white/90 p-2">
+                <img
+                  src={item.logo}
+                  alt={item.org}
+                  className="h-full w-full object-contain"
+                />
               </div>
-              <p className="mt-1 text-sm font-medium text-white/60">
-                {item.org}
-              </p>
-              <ul className="mt-3 list-disc space-y-1.5 pl-5 text-left text-sm text-white/70 marker:text-white/30">
-                {item.bullets.map((bullet, j) => (
-                  <li key={j}>{bullet}</li>
-                ))}
-              </ul>
+              <div className="min-w-0 flex-1">
+                <div className="flex flex-col items-center gap-1 sm:flex-row sm:flex-wrap sm:items-baseline sm:justify-between sm:gap-2">
+                  <h3 className="text-lg font-semibold text-white">
+                    {item.role}
+                  </h3>
+                  <span className="text-sm text-white/40">{item.period}</span>
+                </div>
+                <p className="mt-1 text-sm font-medium text-white/60">
+                  {item.org}
+                </p>
+                <ul className="mt-3 list-disc space-y-1.5 pl-5 text-left text-sm text-white/70 marker:text-white/30">
+                  {item.bullets.map((bullet, j) => (
+                    <li key={j}>{bullet}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </section>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 }

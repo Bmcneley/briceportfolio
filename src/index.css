@@ -15,23 +15,11 @@ html {
 }
 
 @keyframes shimmer {
-  0% {
+  from {
     background-position: 200% 0;
   }
-  15% {
-    background-position: -50% 0;
-  }
-  100% {
-    background-position: -50% 0;
-  }
-}
-
-@keyframes spin-ring {
-  from {
-    transform: rotate(0deg);
-  }
   to {
-    transform: rotate(360deg);
+    background-position: -50% 0;
   }
 }
 
