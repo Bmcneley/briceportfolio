@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="flex min-h-[65vh] scroll-mt-24 flex-col items-center justify-center px-6 pb-8 text-center"
+      className="flex flex-col items-center scroll-mt-24 px-6 pt-32 pb-20 text-center"
     >
       <p className="mb-4 text-sm font-medium tracking-widest text-white/50 uppercase">
         Aerospace Engineering, B.S.

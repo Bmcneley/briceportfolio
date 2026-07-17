@@ -1,21 +1,31 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Experience from "./components/Experience";
-import Portfolio from "./components/Portfolio";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import CustomFlightComputer from "./pages/projects/CustomFlightComputer";
+import NasaUsliPayload from "./pages/projects/NasaUsliPayload";
+import HighAltitudeWeatherAircraft from "./pages/projects/HighAltitudeWeatherAircraft";
+import MidAmericanEnergyIntern from "./pages/projects/MidAmericanEnergyIntern";
 
 function App() {
   return (
-    <div className="relative min-h-screen bg-black">
-      <div className="pointer-events-none absolute inset-0 bg-repeat opacity-80 animate-[drift-stars_10s_linear_infinite] [background-image:radial-gradient(1.5px_1.5px_at_20px_30px,white,transparent),radial-gradient(1.5px_1.5px_at_40px_70px,white,transparent),radial-gradient(1px_1px_at_90px_40px,white,transparent),radial-gradient(1px_1px_at_130px_80px,white,transparent),radial-gradient(1.5px_1.5px_at_160px_120px,white,transparent),radial-gradient(1px_1px_at_180px_20px,white,transparent)] [background-size:200px_200px]" />
-      <div className="relative z-10">
-        <Navbar />
-        <Hero />
-        <About />
-        <Experience />
-        <Portfolio />
-      </div>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route
+        path="/portfolio/custom-flight-computer"
+        element={<CustomFlightComputer />}
+      />
+      <Route
+        path="/portfolio/nasa-usli-payload"
+        element={<NasaUsliPayload />}
+      />
+      <Route
+        path="/portfolio/high-altitude-weather-aircraft"
+        element={<HighAltitudeWeatherAircraft />}
+      />
+      <Route
+        path="/portfolio/midamerican-energy-intern"
+        element={<MidAmericanEnergyIntern />}
+      />
+    </Routes>
   );
 }
 

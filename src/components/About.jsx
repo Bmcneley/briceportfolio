@@ -1,13 +1,38 @@
-import { User } from "lucide-react";
+import { Router } from "react-router-dom";
+import { Rocket } from "lucide-react";
+import meInASuit from "../assets/MeInASuit.JPG";
 
 export default function About() {
   return (
     <section
       id="about"
-      className="mx-auto max-w-3xl scroll-mt-24 px-6 py-16 text-center"
+      className="mx-auto max-w-3xl scroll-mt-24 px-6 py-20 text-center"
     >
-      <div className="mx-auto flex h-40 w-40 items-center justify-center rounded-full border border-white/10 bg-white/5">
-        <User className="h-16 w-16 text-white/30" />
+      <div className="mx-auto flex h-80 w-80 items-center justify-center overflow-hidden">
+      <div className="relative flex h-72 w-72 items-center justify-center">
+        <div className="pointer-events-none absolute inset-0 [animation:spin-ring_5s_linear_infinite]">
+          <div className="absolute inset-0 [transform:rotate(-12deg)]">
+            <span className="absolute top-0 left-1/2 h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/70" />
+          </div>
+          <div className="absolute inset-0 [transform:rotate(-24deg)]">
+            <span className="absolute top-0 left-1/2 h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/45" />
+          </div>
+          <div className="absolute inset-0 [transform:rotate(-36deg)]">
+            <span className="absolute top-0 left-1/2 h-1 w-1 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/25" />
+          </div>
+          <div className="absolute inset-0 [transform:rotate(-48deg)]">
+            <span className="absolute top-0 left-1/2 h-1 w-1 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/10" />
+          </div>
+          <Rocket className="absolute top-0 left-1/2 h-6 w-6 -translate-x-1/2 -translate-y-1/2 rotate-45 text-white" />
+        </div>
+        <div className="h-64 w-64 overflow-hidden rounded-full border border-white/10 bg-white/5">
+          <img
+            src={meInASuit}
+            alt="Brice McNeley"
+            className="h-full w-full scale-150 object-cover object-top [transform-origin:top]"
+          />
+        </div>
+      </div>
       </div>
       <h2 className="mt-8 text-2xl font-bold text-white sm:text-3xl">
         Who am I and why should you care?

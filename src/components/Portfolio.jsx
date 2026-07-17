@@ -1,15 +1,17 @@
+import { Link } from "react-router-dom";
+
 export default function Portfolio() {
   return (
     <section
       id="portfolio"
-      className="mx-auto max-w-5xl scroll-mt-24 px-6 py-24"
+      className="mx-auto max-w-5xl scroll-mt-24 px-6 py-20"
     >
       <h2 className="text-center text-2xl font-bold text-white sm:text-3xl">
         Portfolio
       </h2>
       <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
-        <a
-          href="#"
+        <Link
+          to="/portfolio/custom-flight-computer"
           className="group overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition-colors hover:border-white/30"
         >
           <div className="flex h-40 items-center justify-center bg-white/5 text-white">
@@ -20,10 +22,10 @@ export default function Portfolio() {
               Custom Flight Computer
             </h3>
           </div>
-        </a>
+        </Link>
 
-        <a
-          href="#"
+        <Link
+          to="/portfolio/nasa-usli-payload"
           className="group overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition-colors hover:border-white/30"
         >
           <div className="flex h-40 items-center justify-center bg-white/5 text-white">
@@ -34,10 +36,10 @@ export default function Portfolio() {
               NASA USLI Payload
             </h3>
           </div>
-        </a>
+        </Link>
 
-        <a
-          href="#"
+        <Link
+          to="/portfolio/high-altitude-weather-aircraft"
           className="group overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition-colors hover:border-white/30"
         >
           <div className="flex h-40 items-center justify-center bg-white/5 text-white">
@@ -48,10 +50,10 @@ export default function Portfolio() {
               High Altitude Weather Aircraft
             </h3>
           </div>
-        </a>
+        </Link>
 
-        <a
-          href="#"
+        <Link
+          to="/portfolio/midamerican-energy-intern"
           className="group overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition-colors hover:border-white/30"
         >
           <div className="flex h-40 items-center justify-center bg-white/5 text-white">
@@ -62,7 +64,7 @@ export default function Portfolio() {
               MidAmerican Energy Intern
             </h3>
           </div>
-        </a>
+        </Link>
       </div>
     </section>
   );

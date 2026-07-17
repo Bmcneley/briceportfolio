@@ -26,6 +26,15 @@ html {
   }
 }
 
+@keyframes spin-ring {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes drift-stars {
   from {
     background-position: 0 0;
