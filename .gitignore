@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# Original camera files (unused; only converted .jpg versions are imported)
+*.HEIC
+*.heic
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

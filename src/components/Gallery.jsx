@@ -16,18 +16,20 @@ export default function Gallery({ images = [], count = images.length || 4 }) {
         >
           {slides.map((i) =>
             images[i] ? (
-              <div key={i} className="relative h-64 w-full shrink-0 sm:h-80">
+              <div
+                key={i}
+                className="flex h-80 w-full shrink-0 items-center justify-center bg-black sm:h-[28rem]"
+              >
                 <img
                   src={images[i]}
                   alt={`Gallery image ${i + 1}`}
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-contain"
                 />
-                <div className="absolute inset-0 bg-black/40" />
               </div>
             ) : (
               <div
                 key={i}
-                className="flex h-64 w-full shrink-0 items-center justify-center bg-white/5 text-sm text-white/30 sm:h-80"
+                className="flex h-80 w-full shrink-0 items-center justify-center bg-white/5 text-sm text-white/30 sm:h-[28rem]"
               >
                 Placeholder Image {i + 1}
               </div>
