@@ -7,7 +7,7 @@ const experience = [
   {
     role: "Electrical Team Lead",
     org: "NASA Student Launch Initiative",
-    period: "Aug 2025 — Present",
+    period: "Aug 2025 - Present",
     bullets: [
       "Delivered a competition-qualified rocket payload that passed 100% of NASA safety and performance benchmarks by leading a 4-engineer team through the full systems engineering lifecycle",
       "Earned approval at every NASA review milestone by authoring Proposal, PDR, CDR, and FRR documentation and performing requirements verification for payload electrical design, testing, and system safety",
@@ -31,7 +31,7 @@ const experience = [
   {
     role: "M2I Lab Monitor",
     org: "Iowa State University",
-    period: "Jan 2026 — Present",
+    period: "Jan 2026 - Present",
     bullets: [
       "Oversaw the Make to Innovate (M2I) lab during open hours, providing hands-on assistance and guidance that helped student teams achieve their project goals",
       "Enforced lab safety regulations and equipment protocols, maintaining a zero-incident safety record",
@@ -42,7 +42,7 @@ const experience = [
   {
     role: "New Car Wash Bay Detailer",
     org: "Karl Chevrolet",
-    period: "Jun 2023 — Jan 2026",
+    period: "Jun 2023 - Jan 2026",
     bullets: [
       "Detailed new vehicles with precision, ensuring exceptional customer experience through rigorous attention to detail and quality standards",
       "Optimized lot organization and layout by strategically planning vehicle placement, demonstrating critical thinking and effective problem-solving under high-pressure conditions, which improved sale conversion rates",
