@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="flex min-h-screen flex-col items-center justify-center scroll-mt-24 px-6 text-center"
+      className="flex min-h-dvh flex-col items-center justify-center scroll-mt-24 px-6 text-center"
     >
       <div className="flex -translate-y-8 flex-col items-center sm:-translate-y-12">
         <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-medium tracking-widest text-white/70 uppercase">
