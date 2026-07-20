@@ -4,6 +4,7 @@ import CustomFlightComputer from "./pages/projects/CustomFlightComputer";
 import NasaUsliPayload from "./pages/projects/NasaUsliPayload";
 import HighAltitudeWeatherAircraft from "./pages/projects/HighAltitudeWeatherAircraft";
 import MidAmericanEnergyIntern from "./pages/projects/MidAmericanEnergyIntern";
+import { Analytics } from "@vercel/analytics/next";
 
 function App() {
   return (
