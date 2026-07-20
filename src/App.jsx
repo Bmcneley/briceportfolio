@@ -5,6 +5,7 @@ import NasaUsliPayload from "./pages/projects/NasaUsliPayload";
 import HighAltitudeWeatherAircraft from "./pages/projects/HighAltitudeWeatherAircraft";
 import MidAmericanEnergyIntern from "./pages/projects/MidAmericanEnergyIntern";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 function App() {
   return (
