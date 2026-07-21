@@ -12,7 +12,7 @@ const experience = [
       "Delivered a competition-qualified rocket payload that passed 100% of NASA safety and performance benchmarks by leading a 4-engineer team through the full systems engineering lifecycle",
       "Earned approval at every NASA review milestone by authoring Proposal, PDR, CDR, and FRR documentation and performing requirements verification for payload electrical design, testing, and system safety",
       "Achieved zero faults at final assembly, confirmed through systems integration and test, by developing wiring diagrams, electrical schematics, and CAD models and coordinating across mechanical, operations, and safety teams",
-      "Met the NASA target apogee within 2% of requirement by performing Ansys Fluent CFD simulations to model rocket aerodynamics, improve stability, and optimize vehicle design",
+      "Met the NASA target apogee within 1% of requirement by performing Ansys Fluent CFD simulations to model rocket aerodynamics, improve stability, and optimize vehicle design",
       "Held total payload mass under 5 lb while improving vehicle stability by 3D-printing the payload structure and iterating the design through ground and flight testing",
     ],
     logo: nasaLogo,
@@ -35,7 +35,7 @@ const experience = [
     bullets: [
       "Oversaw the Make to Innovate (M2I) lab during open hours, providing hands-on assistance and guidance that helped student teams achieve their project goals",
       "Enforced lab safety regulations and equipment protocols, maintaining a zero-incident safety record",
-      "Trained new lab users on 3D printers, laser cutters, and CNC equipment, expanding safe and independent use of the makerspace",
+      "Trained new lab users on 3D printers, power tools, and drill press equipment, expanding safe and independent use of the makerspace",
     ],
     logo: iowaStateLogo,
   },
